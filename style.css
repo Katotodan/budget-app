@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary_color: rgb(240, 163, 163);
+}
+body{
+    background-color: var(--primary_color) ;     
+}
+h2{
+    text-align: center;
+    margin-top: 3rem;
+}
+body main{
+    width: 100%;
+    margin-top: 5rem ;
+    padding-left: 15% ;  
+}
+aside{
+    width: 100%;
+    display: flex;
+    gap: 10%;
+}
+form{
+    border: 1px solid black;
+    width: 25rem;
+    padding: 1rem;
+}
+form:first-child{
+    margin-bottom: 4rem;
+}
+input{
+    width: 60%;
+}
+aside span{
+    display: inline-block;
+    width: 10rem;
+}
+aside div{
+    margin-bottom: 0.5rem;
+}
+.deletebtn:hover{
+    cursor: pointer;
+}
+.updateItem{
+    display: inline-block;
+    margin: 0 0.2rem;
+    padding: 0 0.2rem;
+}
+.updateItem:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+}
+.message{
+    
+    text-align: center;
+    padding: 0.3rem;
+    margin-top: 1rem;
+    display: none;
+}
+.success{
+    background-color: rgb(199, 199, 140);
+}
+.fail{
+    background-color: rgb(188, 127, 127);
+}
+
+@media screen and (max-width:1174px) {
+    body main{
+        padding-left: 10% ;
+        
+    }
+    aside span{
+        width: 9rem;
+    }
+}
+@media screen and (max-width:1044px) {
+    body main{
+        padding-left: 8% ;
+        
+    }
+    aside span{
+        width: 8rem;
+    }
+    aside{
+        gap: 7%;
+    }
+}
+@media screen and (max-width:926px) {
+    body main{
+        padding-left: 5% ;
+        
+    }
+    aside span{
+        width: 7rem;
+    }
+    aside{
+        gap: 5%;
+    }
+    form{
+        width: 22rem;
+    }
+}
+@media screen and (max-width:772px) {
+    aside{
+        display: block;
+    }
+    article{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+    form{
+        margin: 0 auto;
+        width: 80%;
+    }
+    form:first-child{
+        margin-bottom: 0.5rem;
+    }
+}
+@media screen and (max-width:473px) {
+    article,form{
+        width: 98%;
+    }
+}
+@media screen and (max-width:383px) {
+    aside span{
+        width: 5.5rem;
+    }
+    aside span:nth-child(2){
+        width: 6.4rem;
+    }
+    aside span:nth-child(3){
+        width: 4rem;
+    }
+} 

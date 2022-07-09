@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget app</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Budget app</h2>
+    <div class="message success">Your inputs are correct</div>
+    <div class="message fail">Your inputs are incorrect verify them</div>
+    <main> 
+        <aside>
+            <form>
+                <p>
+                    <label for="budget">Please input your budget</label><br><br>
+                    <input type="number" id="budget">
+                </p><br>
+                <button class="bugdetSub">Submit</button>
+            </form>
+            <article>
+                <div>
+                    <span>BUDGET</span> 
+                    <span>EXPENSIVES</span>
+                    <span>BALANCE</span>
+                </div>
+                <div>
+                    <span class="budgetAmount"> $ 000</span> 
+                    <span class="budgetExpenses"> $ 000</span>
+                    <span class="budgetBalance"> $ 000</span>
+                </div>
+            </article>  
+        </aside>
+        <aside>
+            <form >
+                <p>
+                    <label for="expensive">Please input your expensive</label><br><br>
+                    <input type="text" id="expensive">
+                </p><br>
+                <p>
+                    <label for="amount">Please input your expensive amount</label><br><br>
+                    <input type="number" id="amount">
+                </p>
+                <br>
+                <button class="addItem">Add item</button>
+            </form>
+
+            <article>
+                <div>
+                    <span>Expensive title</span> 
+                    <span>Expensive value</span>
+                    <span></span>
+                </div>
+            </article>   
+        </aside>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
